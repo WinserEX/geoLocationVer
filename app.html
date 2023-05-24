@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coordinates to Location</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coordinates to Location</h1>
+        <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" class="form-control">
+        </div>
+        <button onclick="fetchData()" class="btn btn-primary">Submit</button>
+        <table id="resultsTable" class="table mt-3">
+            <!-- Table data will be inserted here -->
+        </table>
+        <button onclick="downloadCSV()" class="btn btn-secondary mt-3">Download CSV</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
